@@ -46,7 +46,8 @@ class Solution:
             for j in range(i + 1, n):
                 if nums[i] + nums[j] == target:
                     return [i, j]
-        return [] ```
+        return []
+```
 
 ### Файл `test_main.py`
 
@@ -75,7 +76,8 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(result, [])
 
 if __name__ == '__main__':
-    unittest.main() ```
+    unittest.main()
+```
 
 
 
