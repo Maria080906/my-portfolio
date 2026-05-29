@@ -10,4 +10,4 @@
 4. [Итераторы и сопрограммы](programming/work4.md)
 5. [Паттерн "Декоратор"](programming/work5.md)
 6. [Паттерн "Одиночка"](programming/work6.md)
-7. [Основные концепции ООП (Перегрузка)](programming/work7.md)"# ������� ��࠭��" 
+7. [Основные концепции ООП (Перегрузка)](programming/work7.md)"
