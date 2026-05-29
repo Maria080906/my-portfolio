@@ -46,4 +46,48 @@ class Solution:
             for j in range(i + 1, n):
                 if nums[i] + nums[j] == target:
                     return [i, j]
-        return []# ����� 1" 
+        return []
+
+### Файл `test_main.py`
+
+import unittest
+from main import Solution
+
+class TestSolution(unittest.TestCase):
+    def setUp(self):
+        self.solution = Solution()
+
+    def test_basic_case(self):
+        result = self.solution.twoSum([2, 7, 11, 15], 9)
+        self.assertIn(result, [[0, 1], [1, 0]])
+
+    def test_negative_numbers(self):
+        result = self.solution.twoSum([-1, -2, -3, -4, -5], -8)
+        self.assertIn(result, [[2, 4], [4, 2]])
+
+    def test_duplicate_numbers(self):
+        result = self.solution.twoSum([3, 3, 4, 5], 6)
+        self.assertIn(result, [[0, 1], [1, 0]])
+
+    def test_no_solution(self):
+        result = self.solution.twoSum([1, 2, 3, 4], 10)
+        self.assertEqual(result, [])
+
+if __name__ == '__main__':
+    unittest.main()
+
+
+
+## Результаты тестирования
+Все тесты пройдены успешно. Программа корректно обрабатывает:
+
+Обычные случаи
+
+Отрицательные числа
+
+Повторяющиеся элементы
+
+Отсутствие решения
+
+## Вывод
+Реализована программа поиска двух элементов массива, сумма которых равна заданному числу. Разработаны тесты, подтверждающие корректность работы.
