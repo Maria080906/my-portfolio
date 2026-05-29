@@ -54,6 +54,7 @@ class FibonacchiLst:
             if is_fibonacci_number(current):
                 return current
         raise StopIteration
+```
 
 ### Файл `gen_fib.py` (сопрограмма)
 
@@ -75,6 +76,7 @@ def my_genn() -> Generator[List[int], int, None]:
             raise ValueError("n должно быть >= 0")
         fib_list = fib_sequence(n)
         n = yield fib_list
+```
 
 ### Файл `test_fib_it.py` (тесты итератора)
 
@@ -94,7 +96,7 @@ def test_single_element():
     assert result == []
     result = list(FibonacchiLst([1]))
     assert result == [1]
-
+```
 ### Файл `test_fib.py` (тесты сопрограммы)
 
 ```python
@@ -117,7 +119,7 @@ def test_fib_negative():
     next(gen)
     with pytest.raises(ValueError):
         gen.send(-1)
-
+```
 ## Результаты тестирования
 
 Все тесты пройдены успешно. Программа корректно обрабатывает:
