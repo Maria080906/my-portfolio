@@ -1,6 +1,6 @@
 site_name: Моё портфолио
 site_description: Выполненные работы по программированию
-site_author: Бойко Мария
+site_author: Бойко Мария Алексеевна
 
 nav:
   - Главная: index.md
