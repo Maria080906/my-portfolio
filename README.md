@@ -14,4 +14,4 @@
 
 ## Сайт портфолио
 
-Открыть сайт: [https://maria080906.github.io/my-portfolio/](https://maria080906.github.io/my-portfolio/)
+Открыть сайт: [https://maria080906.github.io/my-portfolio/][(https://github.com/Maria080906/my-portfolio)]
